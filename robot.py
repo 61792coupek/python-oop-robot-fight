@@ -1,7 +1,12 @@
+import random
+
 class Robot:
-    def __init__(self, name, hp, energy, attack_power, cooldown):
+    def __init__(self, name):
         self.name = name
-        self.hp = hp
-        self.energy = energy
-        self.attack_power = attack_power
-        self.cooldown = cooldown
+        self.hp = 100
+        self.energy = 100
+        self.attack_power = 10
+
+    def check_hp(self):
+        return f"Robot: {self.name}\nPočet HP: {self.hp}\nEnergie: {self.energy}"
+    
